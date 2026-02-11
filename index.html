@@ -80,17 +80,6 @@
           opacity: 0.3;
         }
 
-        /* Smooth Reveal Animation */
-        .reveal {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
         /* Orbiting Animation Utility */
         @keyframes float {
           0%, 100% { transform: translateY(0) translateX(0); }
@@ -117,5 +106,6 @@
 <body>
     <div class="scanline"></div>
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
